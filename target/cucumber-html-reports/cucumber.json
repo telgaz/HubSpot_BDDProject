@@ -1,0 +1,145 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 714474518,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on hubspot login page",
+            "match": {
+              "location": "LoginPageSD.verifyLoginPageTitle()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4368319772,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Verify invalid login from messenger page",
+        "description": "",
+        "id": "messenger-page-feature;verify-invalid-login-from-messenger-page",
+        "after": [
+          {
+            "result": {
+              "duration": 169553779,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4681609260,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter tugba@sample.com into username field on the hubspot page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tugba@sample.com",
+                  "offset": 8
+                },
+                {
+                  "val": "username",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginPageSD.invalidLogin(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 184402658,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter test345 into password field on the hubspot page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test345",
+                  "offset": 8
+                },
+                {
+                  "val": "password",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSD.invalidLogin(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 297351772,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on login button on hubspot page",
+            "match": {
+              "location": "LoginPageSD.verifyInvalidLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1149560016,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify invalid login message on login page",
+            "match": {
+              "location": "LoginPageSD.verifyErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Messenger page feature",
+    "description": "",
+    "id": "messenger-page-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  }
+]
